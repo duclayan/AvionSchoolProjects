@@ -37,16 +37,35 @@ body {
     color:#F2EBD3;
 }
 #display-grid {
+    background : #5e6b6196;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-gap: 15px;
+    margin-top: 50px;
 }
 
 .game-cell{
-    height:100px;
-    width: 100px;
-    background: orange;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width: 200px;
+    cursor: pointer;
+    background: #14BDAC;
+}
+
+.x::before {
+    content: '× ';
+    font-size: 200px;
+    text-align: center
+
+}
+.o::before {
+    content: '○';
+    font-size: 225px;
+    position: relative;
+    margin-bottom: 20px;
 }
 /* html {
     box-sizing: border-box;
