@@ -28,6 +28,7 @@ body {
     justify-content: space-around;
     margin-top: 25px;
     font-size: 20px;
+    height: 30px;
 }
 
 .restart {
@@ -61,11 +62,12 @@ body {
     text-align: center
 
 }
-.o::before {
+.o::after{
     content: '○';
     font-size: 225px;
     position: relative;
     margin-bottom: 20px;
+    color: #F2EBD3;
 }
 /* html {
     box-sizing: border-box;
