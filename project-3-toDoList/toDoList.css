@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    color: #545454;
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+.container {
+    background: #bfc9c9;
+    margin: 50px;
+    padding:50px;
+    border-radius: 25px;
+    height: 700px;
+    width: 500px;
+}
+.heading-image {
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 0;
+    padding:0
+}
