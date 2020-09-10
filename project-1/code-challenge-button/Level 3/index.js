@@ -31,7 +31,6 @@ keys.addEventListener('click', e => {
         if(!action){
             console.log("Name!")
             var output = ''
-            greetingPage.dataset.previousText = keyContent
             greetingPage.dataset.previousKeyType = 'name'
             if (previousKeyType === 'greetHello'){
                 output = greeting('Hello',keyContent)
@@ -59,9 +58,8 @@ keys.addEventListener('click', e => {
             } else {
                 display.textContent = "Please click a name"
             }
-            //const greeting
             greetingPage.dataset.previousKeyType = 'greetGoodBye'
-            console.log('Goodbye')
+
         }
         if(action === 'Clear'){
             display.textContent = ''
@@ -73,7 +71,6 @@ keys.addEventListener('click', e => {
                 greetingPage.dataset.previousText = ' '
                 greetingPage.querySelector("#del").innerHTML = "Clear"
             }
-   
             greetingPage.dataset.previousKeyType = 'clear'
             console.log('Clear')
         }

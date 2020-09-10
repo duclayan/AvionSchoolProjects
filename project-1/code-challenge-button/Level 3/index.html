@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href= "index.css">
 </head>
 <body>
-    
 
-        <div class = "header">
-            <h1 class = "title">Greeting Page</h1>
-        </div>
-
+    <div class = "container">
         <div class = "greetingPage">
-            <div class = "greetingDisplay"></div>
-            <div class = "greetingKeys">
-                <button>Pau</button>
-                <button>Victor</button>
-                <button>John</button>
-                <button>Adrian</button>
-                <button data-action = "Hello">Hello</button>
-                <button data-action = "Goodbye">GoodBye</button>
-                <button id = "del" data-action = "Clear">Clear</button>
+            <div class = "header">
+                <h1 class = "title">GREETING PAGE</h1>
             </div>
+            <div></div>
+            <div class = "greetingDisplay">
+                <p class= "text">Hello What's Up? </p>
+            </div>
+
+            <div class = "greetingKeys">
+                <div class = "namesGrid">
+                    <button class = "big-button">Pau</button>
+                    <button class = "big-button">Victor</button>
+                    <button class = "big-button">John</button>
+                    <button class = "big-button">Adrian</button>
+                </div>
+                <div class = "functionButton">
+                    <button data-action = "Hello" class = "big-button">Hello</button>
+                    <button data-action = "Goodbye" class = "big-button">GoodBye</button>
+                    <button id = "del" data-action = "Clear" class = "big-button">Clear</button>    
+                </div> 
+                </div>            
+            </div>
+
         </div>
-    
+    </div>
     
     <script src = "index.js"></script>
 </body>
