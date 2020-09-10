@@ -52,3 +52,7 @@ input {
     height: 30px;
     font-size: 30px;
 }
+.activity-list {
+    display: flex;
+    
+}
