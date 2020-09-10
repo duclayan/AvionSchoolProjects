@@ -31,7 +31,7 @@ keys.addEventListener('click', e => {
         if(!action){
             console.log("Name!")
             var output = ''
-            greetingPage.dataset.previousKeyType = keyContent
+            greetingPage.dataset.previousText = keyContent
             greetingPage.dataset.previousKeyType = 'name'
             if (previousKeyType === 'greetHello'){
                 output = greeting('Hello',keyContent)
