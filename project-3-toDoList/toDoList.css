@@ -27,6 +27,12 @@ body {
 .header{
     position: relative;
     text-align: center;
+    /* background: url("https://images.pexels.com/photos/3715398/pexels-photo-3715398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: auto;
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px; */
 }
 .cover-image {
     width: 100%;
@@ -35,14 +41,6 @@ body {
     border-top-left-radius: 25px;
 }
 
-.date {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-size: 50px;
-}
 input {
     border-top-style: hidden;
     border-right-style: hidden;
@@ -52,12 +50,10 @@ input {
     width: 80%;
     height: 30px;
     font-size: 30px;
-<<<<<<< HEAD
 }
 .activity-list {
     display: flex;
     
-=======
     margin-left: 20px;
     padding: 10px;
     /* background-color:white ; */
@@ -116,5 +112,20 @@ input:focus {
 }
 .complete-button::selection{
     cursor: pointer;
->>>>>>> 1534d193998ce24820ba1fdad88265faef0df0d4
 }
+
+.currentDate {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color: rgb(211, 201, 201);
+    text-align: center;
+    max-width: 50%;
+}
+
+/* #currentDate{
+    color: white;
+    background: white;
+} */
