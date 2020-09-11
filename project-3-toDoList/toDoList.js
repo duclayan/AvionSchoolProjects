@@ -21,13 +21,19 @@ function removeActivity(){
 function addActivity(){
     var newActivity = document.getElementById('activity-added').value
     var node = document.createElement("ul")
-    var textNode = document.createTextNode(' ❌ ' + newActivity)
-    node.appendChild(textNode)
-    console.log(node)
-    document.getElementById('activity-list').appendChild(node)
-    document.getElementById('activity-added').value = ''
+    let count = document.getElementsByTagName("ul")
+    if (count.length > 5){
+        alert("Overload of Task. Time to chill")
+    } else {
+        var textNode = document.createTextNode(' ❌ ' + newActivity)
+        node.appendChild(textNode)
+        console.log(node)
+        document.getElementById('activity-list').appendChild(node)
+        document.getElementById('activity-added').value = ''
+    }
+    
 }
-
+alert("Welcome to our to-do-list. Click + to add. Once you're done with the task you can click on the task.")
 
 let container = document.querySelector('.container')
 let header = container.querySelector('.header')
