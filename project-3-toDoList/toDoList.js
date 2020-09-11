@@ -1,4 +1,8 @@
-const clear = document.querySelector('.clear')
-const date = document.getElementById('date')
-const list = document.getElementById('list')
-const input = document.getElementById('input')
+let container = document.querySelector('.container')
+let header = container.querySelector('.header')
+let list = container.querySelector('.to-do-list')
+let currentDate = header.querySelector('.currentDate')
+
+console.log(currentDate)
+let day = new Date()
+currentDate.innerHTML = day.constructor();
