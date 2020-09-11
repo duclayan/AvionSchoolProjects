@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline:none;
 }
 
 body {
@@ -50,5 +51,63 @@ input {
     background-color:rgba(255, 255, 255, 0);
     width: 80%;
     height: 30px;
-    font-size: 3px;
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    /* background-color:white ; */
+}
+
+.input-field{
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    color: #303f46
+}
+input:focus {
+    color: #303f46;
+}
+.input-button{
+    /* background-color: white; */
+    position: relative;
+    left: 30px;
+}
+.input-button:hover{
+    /* background-color: white; */
+    cursor: pointer;
+    color: #303f46;
+    position: relative;
+    left: 30px;
+}
+
+.activity-list {
+    display:inline-flex;
+    flex-direction: row-reverse;
+    font-size: 30px;
+    padding: 20px;
+    /* background:white; */
+    position: relative;
+    align-items: flex-end;
+    align-content: space-between;
+    margin: 20px;
+}
+.activity-title{
+    /* background: black; */
+    position: relative;
+    left: 50px;
+
+}
+.complete-button{
+    /* background:red; */
+    display: inline-flex;
+    align-content: flex-start;
+    position: relative;
+}
+
+.complete-button:hover{
+    cursor: pointer;
+    color: #303f46;
+}
+.complete-button::selection{
+    cursor: pointer;
 }
