@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 let container = document.querySelector('.container')
 let header = container.querySelector('.header')
 let list = container.querySelector('.to-do-list')
