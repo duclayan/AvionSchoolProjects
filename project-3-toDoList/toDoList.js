@@ -1,4 +1,23 @@
 //functions
+function removeActivity(){
+    console.log("removeActivityFunction")
+    let parentElement = document.getElementById('activity-list')
+    let node = document.getElementsByClassName('toDelete')
+    let element = document.getElementsByTagName("ul")
+    let nodeIndex = ''
+    if (element.length === 1){
+        parentElement.removeChild(parentElement.childNodes[0])
+    } else {
+        for(var i = 0; i< element.length; i++ ){
+            if (element[i].className === "toDelete"){
+                nodeIndex = i
+                console.log('node found')
+                parentElement.removeChild(parentElement.childNodes[nodeIndex])
+            }
+        }
+    }
+
+}
 function addActivity(){
     var newActivity = document.getElementById('activity-added').value
     var node = document.createElement("ul")
@@ -6,7 +25,7 @@ function addActivity(){
     node.appendChild(textNode)
     console.log(node)
     document.getElementById('activity-list').appendChild(node)
-    newActivity = ' '
+    document.getElementById('activity-added').value = ''
 }
 
 
@@ -25,9 +44,17 @@ let inputContainer = listContainer.querySelector('.input-field')
 let inputTask = inputContainer.querySelector('.new-item').value
 let add = inputContainer.querySelector('input-button')
 let keys = document.querySelector('.activity-list')
+let lists = document.querySelectorAll('ul')
+console.log(keys.length)
 
 keys.addEventListener('click',e => {
     if(e.target.matches('ul')){
-        console.log('ul clicked')
+        let target = e.target
+        target.className += "toDelete"
+        // console.log(target.className)
+        // console.log(target.removeChild)
+        // console.log(lists)
+        removeActivity()
+        //console.log(document.currentScript.nodeName)
     }
 })
