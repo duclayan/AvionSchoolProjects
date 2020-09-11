@@ -50,13 +50,24 @@ input {
     width: 80%;
     height: 30px;
     font-size: 30px;
+    padding: 20px;
 }
-.activity-list {
+ul{
     display: flex;
-    
-    margin-left: 20px;
-    padding: 10px;
-    /* background-color:white ; */
+    flex-flow: column;
+    padding-bottom:10px;
+    padding-top:10px;
+    width:100%;
+    font-size: 20px;
+    padding-left: 20px;
+    color:#8aada7;
+    background: #1e2e2bbe;
+    border-bottom: 2px solid #809c96;
+}
+ul:hover{
+    color: rgb(34, 14, 18);
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .input-field{
@@ -69,6 +80,7 @@ input {
 input:focus {
     color: #303f46;
 }
+
 .input-button{
     /* background-color: white; */
     position: relative;
@@ -77,31 +89,33 @@ input:focus {
 .input-button:hover{
     /* background-color: white; */
     cursor: pointer;
-    color: #303f46;
+    color: #1c89bb;
     position: relative;
     left: 30px;
 }
 
-.activity-list {
+/* .activity-list {
     display:inline-flex;
     flex-direction: row-reverse;
     font-size: 30px;
     padding: 20px;
-    /* background:white; */
     position: relative;
     align-items: flex-end;
     align-content: space-between;
     margin: 20px;
-}
+} */
 .activity-title{
     /* background: black; */
     position: relative;
     left: 50px;
+    background-color: rgba(255, 217, 0, 0.589);
 
 }
 .complete-button{
     /* background:red; */
-    display: inline-flex;
+    display:flex;
+    padding: 10px;
+    flex-direction: column;
     align-content: flex-start;
     position: relative;
 }
@@ -121,8 +135,15 @@ input:focus {
     transform: translate(-50%,-50%);
     font-size: 15px;
     color: rgb(211, 201, 201);
+    background: rgba(0, 0, 0, 0.363);
     text-align: center;
-    max-width: 50%;
+    max-width: 60%;
+    padding: 5px;
+    border: 2px solid white;
+}
+.to-do-list{
+    padding:0;
+    margin:0;
 }
 
 /* #currentDate{

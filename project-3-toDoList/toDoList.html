@@ -15,21 +15,24 @@
         </div>
 
         <div class = "to-do-list">
+            
              <!--Input Field New Task-->
             <div class = "input-field">
                 <div class = "new-item">
-                    <input type = "text" name = "add" placeholder= "Add to your list">
+                    <input type = "text" id= "activity-added" name = "add" placeholder= "Add to your list">
                 </div>
-                <div class = "input-button"> + </div>
+                <div id = button class = "input-button" onclick="addActivity()"> + </div>
             </div>
+
             <!--Cross button beside task-->
-            <div class = "activity-list">
-                <div class = "activity-title">
-                    <ul class = "activity"> Hello I'm an Activity</ul>
-                    <ul> Get on a meeting </ul>
-                </div>
-                <div class = "complete-button">⨯</div>
-            </div>
+            <!-- <div class = "activity-list">
+                <div id = "activity-title" class = "activity-title">Hello I'm an Activity</div>
+                <!-- <div id = "complete-button" class = "complete-button"> ⨯ </div> -->
+            <!-- </div> -->
+
+    
+             <div id = "activity-list" class = "activity-list" ></div>
+
         </div>
     </div>
     <script src = "toDoList.js"></script>
